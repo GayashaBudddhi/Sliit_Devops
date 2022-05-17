@@ -23,7 +23,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/it19061580/ctse-assignment:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/ctse-assignment:latest
     # - uses: actions-hub/kubectl@master
     #   env:
     #     KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
