@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ctse-assignment
+spec:
+  selector:
+    matchLabels:
+      app: ctse-assignment
+  replicas: 2
+  template:
+    metadata: 
+      labels:
+        app: ctse-assignment
+    spec:
+      containers:
+        - name: ctse-assignment
+          image: it19061580/ctse-assignment
+          ports: 
+            - containerPort: 8081
